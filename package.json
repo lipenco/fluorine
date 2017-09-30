@@ -29,7 +29,7 @@
     "book": "gitbook build",
     "postbook": "cp ./docs/now.json _book/",
     "book:watch": "gitbook serve",
-    "postinstall": "npm build:umd:min"
+    "postinstall": "npm run build:umd:min"
   },
   "author": "Phil Plückthun <phil@plckthn.me> (https://github.com/philplckthun)",
   "bugs": {
