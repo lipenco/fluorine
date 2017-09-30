@@ -22,7 +22,9 @@ top level component wrapping it.
 ## Example
 
 ```js
-import React, { Component, PropTypes } from 'react
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+
 import { withActions } from 'fluorine-lib'
 
 import {
@@ -53,4 +55,3 @@ export default class YourComponent extends Component {
 
 > Note: To use decorators in Babel with the "@-Syntax" you need to add a
 > legacy decorator plugin. http://babeljs.io/docs/plugins/syntax-decorators/
-

@@ -49,7 +49,8 @@ at all. You'd of course still use it if you use agenda creators.
 ## Example
 
 ```js
-import React, { Component, PropTypes } from 'react
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { wrapActions } from 'fluorine-lib'
 
 import {
@@ -70,4 +71,3 @@ export default class YourComponent extends Component {
   }
 }
 ```
-

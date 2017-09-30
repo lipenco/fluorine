@@ -1,4 +1,6 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+
 import { withStore } from 'fluorine-lib'
 import todo from '../reducers/todo'
 import dispatcher from '../dispatcher'

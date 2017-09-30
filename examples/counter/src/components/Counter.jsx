@@ -1,4 +1,6 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+
 import { connectStore, wrapActions } from 'fluorine-lib'
 
 import counter from '../reducers/counter'

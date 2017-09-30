@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import TodoTextInput from './TodoTextInput'
 import dispatcher from '../dispatcher'
 import * as todoActions from '../actions/todo'
