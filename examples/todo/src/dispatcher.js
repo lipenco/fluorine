@@ -1,4 +1,4 @@
-import { createDispatcher } from 'fluorine-lib'
+import { createDispatcher } from '../../../lib/index'
 
 const dispatcher = createDispatcher({
   logging: true

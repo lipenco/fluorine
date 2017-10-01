@@ -2,7 +2,7 @@ var webpack = require('webpack')
 var path = require('path')
 
 module.exports = {
-  watch: true,
+  // watch: true,
   entry: [
     'webpack-dev-server/client?http://0.0.0.0:8000',
     'webpack/hot/only-dev-server',
@@ -10,7 +10,7 @@ module.exports = {
   ],
   devtool: 'cheap-module-eval-source-map',
   resolve: {
-    extensions: ['', '.js', '.jsx'],
+    extensions: ['.js', '.jsx'],
     alias: {
       'fluorine-lib': path.join(__dirname, '../..')
     }
@@ -22,19 +22,18 @@ module.exports = {
     loaders: [
       {
         test: /\.jsx?$/,
-        loaders: ['react-hot', 'babel'],
+        loaders: 'babel-loader',
         include: path.join(__dirname, 'src')
       },
       {
         test: /\.jsx?$/,
-        loader: 'babel',
+        loader: 'babel-loader',
         include: path.join(__dirname, 'src'),
         exclude: /node_modules/
       },
       {
-        test: /\.css?$/,
-        loaders: [ 'style', 'raw' ],
-        include: __dirname
+        test: /\.css$/,
+        loader: 'css-loader'
       }
     ]
   },

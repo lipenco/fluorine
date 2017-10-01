@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import wrapActions from '../util/wrapActions'
+import PropTypes from 'prop-types'
 
 export default function connectActions(actions, prop = 'actions', wrapRecursively = true) {
   return Child => class Connector extends Component {
     static contextTypes = {
-      observer: React.PropTypes.object
+      observer: PropTypes.object
     }
 
     constructor(props, context = {}) {
@@ -24,4 +25,3 @@ export default function connectActions(actions, prop = 'actions', wrapRecursivel
     }
   }
 }
-

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 import assert from '../util/assert'
 import isObservable from '../util/isObservable'
@@ -10,8 +11,8 @@ export default function connectStore(selector, prop = 'data', pureProps = true) 
 
   return Child => class Connector extends Component {
     static contextTypes = {
-      observable: React.PropTypes.object,
-      observer: React.PropTypes.object
+      observable: PropTypes.object,
+      observer: PropTypes.object
     }
 
     constructor(props, context = {}) {
@@ -87,4 +88,3 @@ export default function connectStore(selector, prop = 'data', pureProps = true) 
     }
   }
 }
-

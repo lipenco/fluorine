@@ -16,8 +16,8 @@ export default class Provider extends Component {
   };
 
   static childContextTypes = {
-    observer: React.PropTypes.object,
-    observable: React.PropTypes.object
+    observer: PropTypes.object,
+    observable: PropTypes.object
   };
 
   constructor(props) {
